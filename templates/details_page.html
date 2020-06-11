@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Details Page</title>
+	<link rel="stylesheet" type="text/css" href="../static/detail.css">
+</head>
+<body>
+
+	<div class="heading">
+		<h1>{{ data.title }}</h1>
+	</div>
+	<div class="developer">
+		<h2>Developer Information</h2>
+		<p>Developer : {{ data.developer }}</p>
+		<p>Address   : {{ data.developer_address }}</p>
+		<p>Email     : {{ data.developer_email }}</p>
+	</div>
+	<div class="icon">
+		<h2>Icon</h2>
+		<img src="{{ data.icon}}" alt="Cannot Display Image" width="200" height="200">
+	</div>
+	<div class="description">
+		<h2>About the App</h2>
+		<p>{{ data.description }}</p>
+	</div>
+
+	<div class="others">
+		<h2>Other Infromation</h2>
+		<p>Installs : {{ data.installs }}</p>
+		<p>Reviews  : {{ data.reviews }}</p>
+		<p>Ratings  : {{ data.score }}</p>
+		<p>Url      : <a href="{{ data.url }}">{{ data.url }}</p>
+	</div>
+
+	
+</body>
+</html>

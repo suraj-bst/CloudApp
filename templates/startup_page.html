@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Landing Page</title>
+	<link rel="stylesheet" type="text/css" href="../static/startup.css">
+</head>
+<body style="background-image:url(../static/img.jpg);">
+
+	<div class="status">
+		<h1 >BLUESTACKS APP PLAYER</h1>
+		<a class="rfr" href="{{ url_for('home') }}">Refresh Now</a>		
+	</div>
+
+	<!-- <a  href="{{ url_for('home') }}">Refresh Now</a> -->
+	<div class="top" >
+		<h2>Top 10 Apps </h2>
+	</div>
+	<div class="out"">
+
+	{% for details in data %}
+		<div class="in" >
+	    <a  href="{{ url_for('app_details', app_id = details.app_id) }}  " ><p class="dtl">{{ details.title }}</p></a>
+	    </div>    
+	{% endfor %}
+	</div>
+</body>
+</html>

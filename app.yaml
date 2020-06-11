@@ -1,0 +1,6 @@
+runtime: python37
+env_variables:
+  CLOUD_SQL_USERNAME: Chiko0
+  CLOUD_SQL_PASSWORD: nhi btaunga
+  CLOUD_SQL_DATABASE_NAME: appdatabase
+  CLOUD_SQL_CONNECTION_NAME: keen-ripsaw-279917:asia-south1:chiko0
