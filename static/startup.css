@@ -1,0 +1,28 @@
+h1{
+	color: #4a4a35;
+	text-align: center;
+}
+h2{
+	color : #f7461e;
+	text-align: center;
+}
+.rfr{
+	color: #f7461e;
+	font-size: 150%;
+}
+.out{
+	margin-left: 400px;
+	margin-right: 400px;
+	border-style: ridge;
+	padding: 20px;
+}
+.dtl{
+	text-align: center;
+}
+.in
+{
+	margin-bottom:40px;
+	border-style: ridge;	
+  	border-radius: 5px;
+  	padding: 5px;
+}
