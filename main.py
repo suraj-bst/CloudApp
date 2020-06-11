@@ -28,7 +28,7 @@ def home():
     db = pymysql.connect(user=db_user, password=db_password,unix_socket=unix_socket, db=db_name)
   else:
     host = '127.0.0.1'
-    db = pymysql.connect(user=db_user, password=db_password,unix_socket=unix_socket, db=db_name)
+    db = pymysql.connect(user=db_user, password=db_password,unix_socket=host, db=db_name)
 
   top10app=app_fetcher()
   top10appshow=[]
